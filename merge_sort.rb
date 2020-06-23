@@ -3,8 +3,7 @@ def merge_sort(array)
   half_length_array = (array.length/2).round
   left_side_array = array.take(half_length_array)
   right_side_array = array.drop(half_length_array)
-  array = merge(merge_sort(left_side_array), merge_sort(right_side_array))
-  array 
+  merge(merge_sort(left_side_array), merge_sort(right_side_array))
 end
 
 def merge(left_side_array, right_side_array)
